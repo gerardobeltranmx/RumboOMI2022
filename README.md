@@ -1,1 +1,1 @@
-# RumboOMI2022
+# Rumbo a la OMI 2022
