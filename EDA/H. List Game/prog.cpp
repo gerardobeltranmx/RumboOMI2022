@@ -11,7 +11,9 @@ int main(int argc, char const *argv[])
 
     priority_queue <long long int> AJ;
 
-    int N, i, res, x;
+    int N, i;
+    long long int x, res;
+
     char instruccion;
     cin >> N;
 
