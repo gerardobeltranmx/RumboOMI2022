@@ -36,8 +36,32 @@ int main()
             cout << "A = B" << endl;
     }
 
-    
+    if (enc==false and A.size()< B.size()){
+        enc=true;
+        for (itrA=A.begin(); enc==true and itrA!=A.end(); itrA++){
+            if (B.count(*itrA)==0)
+                 enc=false;
+        }
+        if (enc==true)
+            cout << "A < B" << endl;
 
+    }
+
+    if (enc==false and A.size()>B.size()){
+         enc=true;
+         for (itrB=B.begin(); enc==true and itrB!=B.end(); itrB++){
+            if (A.count(*itrB)==0)
+                 enc=false;
+        }
+        if (enc==true)
+            cout << "A > B" << endl;
+
+
+    }
+
+    if (enc==false){
+         cout << "A != B" << endl;   
+    }
 
 
     
